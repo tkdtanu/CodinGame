@@ -1,0 +1,2 @@
+package com;
+import java.util.*;class Solution {public static void main(String args[]){Scanner in = new Scanner(System.in);int N = in.nextInt();for (int i = 0; i < N; i++) {String W = in.next();if(W.equals(new StringBuilder(W).reverse().toString())){System.out.println("true");}else{System.out.println("false");}}}}
