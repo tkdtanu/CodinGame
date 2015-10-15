@@ -1,5 +1,4 @@
-package com;
-import java.util.*;
+package com;import java.util.*;
 import java.io.*;
 import java.math.*;
 
@@ -7,11 +6,13 @@ import java.math.*;
  * Auto-generated code below aims at helping you parse
  * the standard input according to the problem statement.
  **/
-class UberleetFormat {
+class Solution {
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
-        String S = in.nextLine();
+        String t = in.nextLine();
+        String S=t.toUpperCase();
+        System.err.println(S);
         Map<String, String> m1=new HashMap<String, String>();
             m1.put("A" , "4");
     m1.put("B" , "8");
@@ -37,7 +38,7 @@ class UberleetFormat {
     m1.put("V" , "\\/");
     m1.put("W" , "\\/\\/");
     m1.put("X" , "}{");
-    m1.put("Y" , "/");
+    m1.put("Y" , "'/");
     m1.put("Z" , "2");
     for(int i=0;i<S.length();i++){
         String abc=(String) m1.get((S.charAt(i))+"");

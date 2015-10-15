@@ -8,29 +8,24 @@ import java.util.regex.*;
  **/
 class Test 	 {
 
-    public static void main(String args[]) {
-        Scanner in = new Scanner(System.in);
-        String W = in.next();
-        in.nextLine();
-        int N = in.nextInt();
-        in.nextLine();
-        Pattern p=Pattern.compile("["+W+"]");
-        
-        for (int i = 0; i < N; i++) {
-            String area = in.nextLine();int m=0;
-            for(int j=0;j<area.length();j++){
-            	for(int k=0;k<W.length();k++){
-            		if(area.charAt(j)==W.charAt(k)){
-            			m++;
-            		}
-            	}
+    public static void main(String args[]) {import java.util.*;
+    class Solution {
+
+        public static void main(String args[]) {
+            Scanner in = new Scanner(System.in);
+            int N = in.nextInt();
+            in.nextLine();int sum=0;
+            for (int i = 0; i < N; i++) {
+                String line = in.nextLine();
+                sum+=Integer.parseInt((line.charAt(i)+""))+Integer.parseInt((line.charAt(line.length()-i-1)+""));
             }
-            System.out.println(m);    
+            System.out.println(sum);
         }
+   
 
         // Write an action using System.out.println()
         // To debug: System.err.println("Debug messages...");
 
         //System.out.println("answer");
-    }
+    
 }
