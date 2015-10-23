@@ -14,8 +14,7 @@ public class GCD {
 				gcd=i;
 			}
 		}
-		String str="abc";
-		str.
+		
 		System.out.println(gcd);
 
 	}

@@ -8,28 +8,30 @@ class PlusMinusFromNumber {
         String O = in.next();
         int X = in.nextInt();
         String N = in.next();
+        int num1=Integer.parseInt(N.substring(0,X));
+        int num2=Integer.parseInt(N.substring(X,N.length()));
         if(O.equals("+")){
             if(X==0){
                 System.out.println(N);
             }
             else
-            System.out.println(Integer.parseInt(N.substring(0,X))+Integer.parseInt(N.substring(X,N.length())));
+            System.out.println(num1+num2);
         }
         if(O.equals("-")){
             if(X==0){
                 System.out.println("-"+N);
             }
             else
-            System.out.println(Integer.parseInt(N.substring(0,X))-Integer.parseInt(N.substring(X,N.length())));
+            System.out.println(num1-num2);
         }
         if(O.equals("*")){
-            System.out.println(Integer.parseInt(N.substring(0,X))*Integer.parseInt(N.substring(X,N.length())));
+            System.out.println(num1*num2);
         }
          if(O.equals("/")){
-            System.out.println(Integer.parseInt(N.substring(0,X))/Integer.parseInt(N.substring(X,N.length())));
+            System.out.println(num1/num2);
         }
          if(O.equals("%")){
-            System.out.println(Integer.parseInt(N.substring(0,X))%Integer.parseInt(N.substring(X,N.length())));
+            System.out.println(num1%num2);
         }
     }
 }
